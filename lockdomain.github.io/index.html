@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>David · Small tools, shipped in public</title>
+<meta name="description" content="Free, open source tools that run in your browser. Built and shipped in public by David (@lockdomain).">
+<meta property="og:title" content="David · Small tools, shipped in public">
+<meta property="og:description" content="Free, open source tools that run in your browser.">
+<meta property="og:image" content="https://lockdomain.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23fafafa'/><text x='32' y='44' font-size='34' font-family='system-ui' font-weight='800' text-anchor='middle' fill='%23111'>D</text></svg>">
+<style>
+:root{--bg:#0a0a0a;--panel:#131313;--line:#262626;--text:#f5f5f5;--muted:#8a8a8a}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:880px;margin:0 auto;padding:64px 24px 48px}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.05;letter-spacing:-.03em;margin:0 0 16px}
+.lead{color:var(--muted);font-size:19px;max-width:620px;margin:0 0 22px}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:46px}
+.links a{border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-weight:600;font-size:15px}
+.links a:hover{border-color:#444}
+.label{color:var(--muted);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin:0 0 14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tool{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .15s,border-color .15s}
+.tool:hover{transform:translateY(-2px);border-color:#3a3a3a}
+.tool img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;border-bottom:1px solid var(--line);background:#000}
+.tool div{padding:16px 18px 18px}
+.tool b{font-size:18px;display:flex;align-items:center;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%}
+.tool p{color:var(--muted);margin:6px 0 0;font-size:15px}
+.note{color:var(--muted);font-size:14px;margin-top:40px;border-top:1px solid var(--line);padding-top:20px}
+@media (max-width:680px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Small tools that fix<br>small, annoying problems.</h1>
+  <p class="lead">I'm David. I build with AI and ship in public. Everything here is free, open source and runs in your browser, so your data never leaves your machine.</p>
+  <div class="links">
+    <a href="https://x.com/lockdomain" target="_blank" rel="noopener">X / @lockdomain</a>
+    <a href="https://github.com/lockdomain" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <p class="label">Shipped</p>
+  <section class="grid">
+    <a class="tool" href="shipcard/"><img src="shipcard/og.png" alt="ShipCard Before and After card" loading="lazy"><div><b><span class="dot" style="background:#10b981"></span>ShipCard</b><p>Two screenshots in, a Before / After card out. Show what you shipped, not what you committed.</p></div></a>
+    <a class="tool" href="safeshot/"><img src="safeshot/og.png" alt="SafeShot blurring API keys" loading="lazy"><div><b><span class="dot" style="background:#f59e0b"></span>SafeShot</b><p>Finds API keys, tokens, emails and IPs in a screenshot and blurs them before you post.</p></div></a>
+    <a class="tool" href="subsniff/"><img src="subsniff/og.png" alt="SubSniff subscription list" loading="lazy"><div><b><span class="dot" style="background:#6366f1"></span>SubSniff</b><p>Drop a bank CSV, see every subscription, its yearly cost and which prices went up.</p></div></a>
+    <a class="tool" href="threadkit/"><img src="threadkit/og.png" alt="ThreadKit thread editor" loading="lazy"><div><b><span class="dot" style="background:#1d9bf0"></span>ThreadKit</b><p>Write X threads with exact character counts, auto numbering and reach checks.</p></div></a>
+    <a class="tool" href="devcard/"><img src="devcard/og.png" alt="DevCard GitHub profile card" loading="lazy"><div><b><span class="dot" style="background:#22c55e"></span>DevCard</b><p>Your GitHub profile as a card worth sharing. Type a username, download a PNG.</p></div></a>
+  </section>
+
+  <p class="note">Each tool is a few static files with no build step. Read the code, fork it, use it however you like.</p>
+</main>
+</body>
+</html>
